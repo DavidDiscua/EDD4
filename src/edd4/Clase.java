@@ -20,11 +20,11 @@ public class Clase {//inicio clase
     public Clase() {//inicio constructor vacio
     }//fi cosntructor Vacio
 
-    public Clase(String nombre, String codigo, int unidades, ArrayList<Clase> Requisitos) {
+    public Clase(String nombre, String codigo, int unidades) {
         this.nombre = nombre;
         this.codigo = codigo;
         this.unidades = unidades;
-        this.Requisitos = Requisitos;
+        this.Requisitos =new ArrayList();
     }//fin constructor sobrecargado
 
     public String getNombre() {
@@ -55,7 +55,9 @@ public class Clase {//inicio clase
         return Requisitos;
     }
 
-    public void setRequisitos(ArrayList<Clase> Requisitos) {
-        this.Requisitos = Requisitos;
+    public void setRequisitos(Clase Requisitos) {
+        /*Vamos seteando las clases que son requisitos para esta clase*/
+        this.Requisitos.add(Requisitos);
+        
     }
 }//fin clase

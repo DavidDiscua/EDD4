@@ -12,11 +12,30 @@ import java.util.ArrayList;
  */
 public class Planes {//inicio calse Planes
     
-    ArrayList<Clase>Clases;
-
-    public Planes() {//inicio constructor vacio
+    private ArrayList<Clase>Clases;
+    private String nombre;
+    
+    
+      public Planes() {//inicio constructor vacio
         
     }//fin cosntructor vacio
+
+    public Planes(String nombre) {//inicio constructor vacio
+        
+        this.Clases=new ArrayList();
+        this.nombre=nombre;
+    }//fin cosntructor vacio
+    
+
+    
+    
+    public ArrayList<Clase> getClases() {
+        return Clases;
+    }
+
+    public void setClases(Clase Clases) {
+        this.Clases.add(Clases);
+    }
     
     
     
